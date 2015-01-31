@@ -15,6 +15,4 @@ cd unreal && ./configure \
         --with-fd-setsize=1024 \
         --enable-dynamic-linking &&
         make &&
-        make install &&
-        mkdir -p /usr/lib64/unrealircd/modules &&
-        mv /etc/unrealircd/modules/* /usr/lib64/unrealircd/modules/
+        make install

@@ -22,7 +22,7 @@ RUN ${BUILD_DIR}/install.sh
 EXPOSE 6697
 EXPOSE 7000
 
-# Execute UnrealIRCd through runit
+# Execute UnrealIRCd using runit
 RUN mkdir /etc/service/unrealircd && echo '#!/bin/sh\n\
 exec /usr/bin/unrealircd -F' > /etc/service/unrealircd/run
 RUN chown root.root /etc/service/unrealircd/run
